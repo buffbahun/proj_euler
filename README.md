@@ -15,15 +15,19 @@ In the above code, I have implemented LCM algorithm using HCF algorithm. You can
 As I said earlier we can loop the multiples of 3, 5 and 15(LCM) below 1000 and add thoes multip[les of 3 and 5 after substracting it from 15 multiples. But if we observer closer we dont even need to loop it. I will give you a example.
 
 Multiples of 3 below 20:
+
 3, 6, 9, 12, 15, 18
 
 Now we can take 3 common from them as they are 3 multiples:
+
 3 (1, 2, 3, 4, 5, 6)
 
 As we have to sum we can replace "," with "+":
+
 3 (1 + 2 + 3 + 4 + 5 + 6)
 
 We can see inside the paranthesis that this is sum of natural numbers. As we know that the formula for sum of natural numbers for nth position is given by:
+
 sum(n) = ( n * (n + 1) ) / 2
 
 Now I think everything is clear. We can first find the nth term bellow 1000 for 3, 5 and 15(LCM). Calculate the sum of natural numbers upto nth position for each number 3, 5 and 15 from the above formula and multiply each calculated value with 3, 5 and 15 respectively. Finally we can sum value we got from 3 and 5 and then subtract the value from 15 with the result. Now we get the solution for this problem.
