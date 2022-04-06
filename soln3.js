@@ -13,7 +13,7 @@ function isPrime(num) {
 	return true;
 }
 
-console.log(isPrime(process.argv[2]));
+// console.log(isPrime(process.argv[2]));
 
 function primeFactor(num) {
 	let grtstNum = 0;
@@ -33,4 +33,6 @@ function primeFactor(num) {
 	return grtstNum;
 }
 
-console.log(primeFactor(600851475143));
+// console.log(primeFactor(600851475143));
+
+module.exports = {isPrime};
